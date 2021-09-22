@@ -1,6 +1,10 @@
 .header {
-  position: fixed;
   display: flex;
+  justify-content: space-evenly;
+  border-bottom: 0.1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 .header_left {
@@ -27,4 +31,8 @@
   outline: none;
   border: none;
   background: none;
+}
+
+.header_right {
+  display: flex;
 }
