@@ -13,7 +13,10 @@ function Sidebar() {
   return (
     <div className='sidebar'>
       <div className='div sidebar_top'>
-        <img src='/background_sidebar.jpg' alt='' />
+        <img
+          src='https://img0.baidu.com/it/u=191195036,3000560180&fm=26&fmt=auto'
+          alt=''
+        />
         <Avatar className='sidebar_avatar' />
         <h2>Sonny</h2>
         <h4>zi.ao.tan@outlook.com</h4>
@@ -33,11 +36,11 @@ function Sidebar() {
 
       <div className='sidebar_bottom'>
         <p>recent</p>
-        {recentItem('reactjs')}
-        {recentItem('reactjs')}
-        {recentItem('reactjs')}
-        {recentItem('reactjs')}
-        {recentItem('reactjs')}
+        {recentItem('厦门隔离好烦啊')}
+        {recentItem('隔离21天酒店应该干啥')}
+        {recentItem('隔离酒店每日三餐')}
+        {recentItem('如何调整隔离心态')}
+        {recentItem('加拿大回新疆辛酸史')}
       </div>
     </div>
   );
