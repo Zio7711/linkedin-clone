@@ -75,6 +75,11 @@
   margin-top: 10px;
 }
 
+.sidebar_bottom > p {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
 .sidebar_recentItem {
   display: flex;
   font-size: 13px;
@@ -90,4 +95,9 @@
   border-radius: 10px;
   cursor: pointer;
   color: black;
+}
+
+.sidebar_hash {
+  margin-left: 10px;
+  margin-right: 10px;
 }
