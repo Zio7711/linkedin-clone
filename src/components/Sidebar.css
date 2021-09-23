@@ -22,3 +22,29 @@
   background-color: white;
   padding-bottom: 10px;
 }
+
+.sidebar_top > img {
+  margin-bottom: -20px;
+  height: 60px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.sidebar_stat {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar_stat > p {
+  color: gray;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sidebar_statNumber {
+  font-weight: bold;
+  color: #0a66c2 !important;
+}

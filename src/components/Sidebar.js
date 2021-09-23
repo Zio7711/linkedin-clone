@@ -6,10 +6,10 @@ function Sidebar() {
   return (
     <div className='sidebar'>
       <div className='div sidebar_top'>
-        <img src='' alt='' />
+        <img src='/background_sidebar.jpg' alt='' />
         <Avatar className='sidebar_avatar' />
         <h2>Sonny</h2>
-        <h4>gamilcom</h4>
+        <h4>zi.ao.tan@outlook.com</h4>
       </div>
 
       <div className='sidebar_stats'>
