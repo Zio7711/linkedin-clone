@@ -18,7 +18,7 @@ function Sidebar() {
           alt=''
         />
         <Avatar className='sidebar_avatar' />
-        <h2>Sonny</h2>
+        <h2>谈子奥</h2>
         <h4>zi.ao.tan@outlook.com</h4>
       </div>
 
