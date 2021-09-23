@@ -4,6 +4,7 @@ import './Feed.css';
 import InputOption from './InputOption';
 import ImageIcon from '@material-ui/icons/Image';
 import { CalendarViewDay, EventNote, Subscriptions } from '@material-ui/icons';
+import Post from './Post';
 
 function Feed() {
   return (
@@ -28,6 +29,8 @@ function Feed() {
           />
         </div>
       </div>
+
+      <Post name='Zio Tan' description='Tis is a test' message='WOW' />
     </div>
   );
 }
