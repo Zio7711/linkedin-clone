@@ -1,0 +1,15 @@
+.login {
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.login > img {
+  object-fit: contain;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -13,7 +13,7 @@ function App() {
     <div className='app'>
       <Header />
 
-      {user ? (
+      {!user ? (
         <Login />
       ) : (
         <div className='app_body'>
