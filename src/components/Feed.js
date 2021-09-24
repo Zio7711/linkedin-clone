@@ -13,17 +13,18 @@ function Feed() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    db.collection('posts').onSnapshot((snapshot) => {
-      setPosts(
-        snapshot.docs.map((doc) => {
-          console.log(doc, 'here');
-          return {
-            id: doc.id,
-            data: doc.data(),
-          };
-        })
-      );
-    });
+    db.collection('posts')
+      .orderBy('timestamp', 'desc')
+      .onSnapshot((snapshot) => {
+        setPosts(
+          snapshot.docs.map((doc) => {
+            return {
+              id: doc.id,
+              data: doc.data(),
+            };
+          })
+        );
+      });
   }, []);
 
   const sendPost = (e) => {
@@ -35,6 +36,8 @@ function Feed() {
       photoUrl: '',
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
+
+    setInput('');
   };
 
   return (
