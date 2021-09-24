@@ -21,11 +21,14 @@ const Widgets = () => {
         <h2>LinkedIn News</h2>
         <InfoIcon />
       </div>
-      {newsArticle('Papa Recent is back', 'Top News')}
-      {newsArticle('Papa Recent is back', 'Top News')}
-      {newsArticle('Papa Recent is back', 'Top News')}
-      {newsArticle('Papa Recent is back', 'Top News')}
-      {newsArticle('Papa Recent is back', 'Top News')}
+      {newsArticle('厦门隔离14天能解除隔离吗', '完全不能！！！！！')}
+      {newsArticle(
+        '厦门隔离21天后能回新疆吗',
+        '能回！但没有飞机，你可以走回去'
+      )}
+      {newsArticle('厦门隔离完回新疆还用隔离吗', '新疆根本不欢迎你')}
+      {newsArticle('厦门疫情', '非常糟糕')}
+      {newsArticle('隔离期间做几次核酸', '最少7次')}
     </div>
   );
 };
