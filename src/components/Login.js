@@ -1,6 +1,9 @@
 import React from 'react';
 import './Login.css';
 function Login() {
+  const register = () => {};
+  const loginToApp = () => {};
+
   return (
     <div className='login'>
       <img
@@ -14,8 +17,17 @@ function Login() {
         <input type='email' placeholder='Email' />
         <input type='password' placeholder='Password' />
 
-        <button>Sign In</button>
+        <button type='submit' onClick={loginToApp}>
+          Sign In
+        </button>
       </form>
+
+      <p>
+        Not a member?{' '}
+        <span className='login_register' onClick={register}>
+          Register Now
+        </span>
+      </p>
     </div>
   );
 }
