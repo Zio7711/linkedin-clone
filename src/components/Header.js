@@ -9,10 +9,12 @@ import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { useDispatch } from 'react-redux';
 import { auth } from '../firebase';
-import { logout } from '../features/userSlice';
+import { logout, selectUser } from '../features/userSlice';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const dispatch = useDispatch();
+  const user = useSelector(selectUser);
 
   const logoutOfApp = () => {
     dispatch(logout());
@@ -37,11 +39,7 @@ const Header = () => {
         <HeaderOption Icon={BusinessCenterIcon} title='Jobs' />
         <HeaderOption Icon={ChatIcon} title='Messaging' />
         <HeaderOption Icon={NotificationsIcon} title='Notifications' />
-        <HeaderOption
-          avatar='http://compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg'
-          title='me'
-          onClick={logoutOfApp}
-        />
+        <HeaderOption title='me' onClick={logoutOfApp} avatar={true} />
       </div>
     </div>
   );
